@@ -38,9 +38,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-10 items-center">
           <div className="order-2 lg:order-1">
             <div className="w-full md:max-w-[700px]">
-              <h1 className="text-4xl xl:text-6xl font-roboto-serif text-white leading-tight mb-4">
+              <h1 className="text-4xl xl:text-6xl font-roboto-serif text-white leading-normal mb-4">
                 Ready to take your
-                <span className="md:inline-block lg:block text-slate-400">
+                <span className="md:inline-block lg:block text-slate-400 leading-normal">
                   Business Growth
                 </span>{" "}
                 to the next level?
@@ -65,7 +65,7 @@ export default function Home() {
                 <h4 className="text-xl text-slate-400 font-medium font-roboto-serif mb-4">
                   Trusted by Leading Brands
                 </h4>
-                <ul className="flex items-center flex-wrap gap-5">
+                <ul className="flex items-center flex-wrap lg:flex-nowrap gap-5">
                   <li className="flex-1">
                     <Image
                       className="max-w-36"
@@ -123,7 +123,7 @@ export default function Home() {
             <span className="font-semibold text-slate-400 text-2xl font-roboto-serif inline-block mb-6">
               Our Services
             </span>
-            <h2 className="text-4xl xl:text-6xl text-black font-semibold font-roboto-serif leading-tight">
+            <h2 className="text-4xl leading-normal xl:text-6xl text-black font-semibold font-roboto-serif xl:leading-[1.3]">
               High-impact services for your business
             </h2>
           </div>
@@ -245,7 +245,7 @@ export default function Home() {
             <span className="font-semibold text-slate-400 text-2xl font-roboto-serif inline-block mb-5">
               About us
             </span>
-            <h2 className="text-4xl xl:text-6xl text-white font-semibold font-roboto-serif leading-tight mb-5">
+            <h2 className="text-4xl leading-normal xl:text-6xl text-white font-semibold font-roboto-serif xl:leading-[1.3] mb-5">
               The core mission behind all our work
             </h2>
             <article className="text-lg font-dm-sans font-light text-white mb-5">
@@ -309,7 +309,7 @@ export default function Home() {
             <span className="font-semibold text-slate-400 text-2xl font-roboto-serif inline-block mb-6">
               Process
             </span>
-            <h2 className="text-4xl xl:text-6xl text-black font-semibold font-roboto-serif leading-tight">
+            <h2 className="text-4xl leading-normal xl:text-6xl text-black font-semibold font-roboto-serif xl:leading-[1.3]">
               Process that moves things forward
             </h2>
           </div>
@@ -387,7 +387,7 @@ export default function Home() {
       <section className="pb-24">
         <div className="max-w-7xl mx-auto px-5">
           <div className="max-w-[750px] mx-auto text-center mb-14">
-            <h2 className="text-4xl xl:text-6xl text-black font-semibold font-roboto-serif leading-tight">
+            <h2 className="text-4xl leading-normal xl:text-6xl text-black font-semibold font-roboto-serif xl:leading-[1.3]">
               Recent Showcase
             </h2>
           </div>
@@ -487,7 +487,7 @@ export default function Home() {
       <section className="pb-24">
         <div className="max-w-7xl mx-auto px-5">
           <div className="max-w-[750px] mx-auto text-center mb-14">
-            <h2 className="text-4xl xl:text-6xl text-black font-semibold font-roboto-serif leading-tight">
+            <h2 className="text-4xl leading-normal xl:text-6xl text-black font-semibold font-roboto-serif xl:leading-[1.3]">
               Our clints feedback
             </h2>
           </div>
