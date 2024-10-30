@@ -22,6 +22,7 @@ import projectUs2 from "@/img/p2.png";
 import projectUs3 from "@/img/p3.png";
 import projectUs4 from "@/img/p4.png";
 import { BsArrowUpRightCircle } from "react-icons/bs";
+import Feedback from "@/components/clientfeedback/Feedback";
 
 export default function Home() {
   return (
@@ -51,14 +52,18 @@ export default function Home() {
                 nulla leo pulvinar.
               </p>
               <Link
-                className="text-black font-dm-sans font-normal text-xl bg-white inline-block px-5 py-2 rounded-3xl mb-28"
+                className="text-black hover:text-white font-dm-sans border border-black font-normal text-xl bg-white hover:bg-black hover:border hover:border-white group inline-block px-5 py-2 rounded-3xl mb-28 duration-300"
                 href="/"
               >
                 <IoArrowForwardCircleSharp
                   size="24px"
-                  className="inline-block mr-2"
+                  className="group-hover:text-white inline-block mr-2 group-hover:hidden duration-300"
                 />
                 Start your Free Trial
+                <IoArrowForwardCircleSharp
+                  size="24px"
+                  className="group-hover:text-white hidden group-hover:inline-block ml-2 duration-300"
+                />
               </Link>
 
               <div>
@@ -232,7 +237,7 @@ export default function Home() {
       </section>
 
       <section className="py-24 bg-black">
-        <div className="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-8">
+        <div className="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-8 items-start">
           <div>
             <Image
               priority={true}
@@ -291,18 +296,23 @@ export default function Home() {
               </div>
             </div>
             <Link
-              className="text-black font-dm-sans font-normal text-xl bg-white inline-block px-5 py-2 rounded-3xl"
+              className="text-black hover:text-white font-dm-sans border border-black font-normal text-xl bg-white hover:bg-black hover:border hover:border-white group inline-block px-5 py-2 rounded-3xl duration-300"
               href="/"
             >
               <IoArrowForwardCircleSharp
                 size="24px"
-                className="inline-block mr-2"
+                className="group-hover:text-white inline-block mr-2 group-hover:hidden duration-300"
               />
               Start your Free Trial
+              <IoArrowForwardCircleSharp
+                size="24px"
+                className="group-hover:text-white hidden group-hover:inline-block ml-2 duration-300"
+              />
             </Link>
           </div>
         </div>
       </section>
+
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-5">
           <div className="max-w-[750px] mx-auto text-center mb-24">
@@ -384,6 +394,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section className="pb-24">
         <div className="max-w-7xl mx-auto px-5">
           <div className="max-w-[750px] mx-auto text-center mb-14">
@@ -484,14 +495,17 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="pb-24">
+
+      <section className="py-24 bg-gray-100 mb-12 md:mb-24">
         <div className="max-w-7xl mx-auto px-5">
           <div className="max-w-[750px] mx-auto text-center mb-14">
             <h2 className="text-4xl leading-normal xl:text-6xl text-black font-semibold font-roboto-serif xl:leading-[1.3]">
               Our clints feedback
             </h2>
           </div>
-          <div></div>
+          <div className="max-w-2xl mx-auto">
+            <Feedback />
+          </div>
         </div>
       </section>
     </main>
