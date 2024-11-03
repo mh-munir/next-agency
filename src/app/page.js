@@ -343,7 +343,7 @@ export default function Home() {
                 alt="Our Project"
                 title="Web UI design"
                 des="Creative UI design"
-                path="/contact"
+                path="/portfolio"
                 icon={
                   <BsArrowUpRightCircle size={28} className=" text-white" />
                 }
@@ -354,7 +354,7 @@ export default function Home() {
                 alt="Our Project"
                 title="Web UI design"
                 des="Creative UI design"
-                path="/contact"
+                path="/portfolio"
                 icon={
                   <BsArrowUpRightCircle size={28} className=" text-white" />
                 }
@@ -379,7 +379,7 @@ export default function Home() {
                 alt="Our Project"
                 title="Web UI design"
                 des="Creative UI design"
-                path="/contact"
+                path="/portfolio"
                 icon={
                   <BsArrowUpRightCircle size={28} className=" text-white" />
                 }
@@ -389,7 +389,7 @@ export default function Home() {
                 alt="Our Project"
                 title="Web UI design"
                 des="Creative UI design"
-                path="/contact"
+                path="/portfolio"
                 icon={
                   <BsArrowUpRightCircle size={28} className=" text-white" />
                 }
