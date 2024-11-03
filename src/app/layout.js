@@ -1,5 +1,6 @@
 import { Roboto_Serif, DM_Sans } from "next/font/google";
 import "./globals.css";
+
 import Footer from "@/components/footer/Footer";
 
 const roboto_serif = Roboto_Serif({

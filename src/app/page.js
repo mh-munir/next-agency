@@ -26,6 +26,7 @@ import Feedback from "@/components/clientfeedback/Feedback";
 import Services from "@/components/services/Services";
 import Prossec from "@/components/prossec/Prossec";
 import Portfolio from "@/components/portfolio/Portfolio";
+import { data } from "./Demo";
 
 export default function Home() {
   return (
@@ -133,18 +134,19 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
             {/* Card 01 */}
-            <Services
-              icon={
-                <FaPenFancy
-                  size="36px"
-                  className="text-white group-hover:text-black duration-200"
+            {data.map((item, index) => {
+              return (
+                <Services
+                  key={index}
+                  index={index}
+                  icon={item.icon}
+                  ServiceTitle={item.ServiceTitle}
+                  des={item.des}
                 />
-              }
-              ServiceTitle="Content Marketing"
-              des="Our team creates engaging and shareable content that resonates
-                with your audience, drives organic traffic"
-            />
-            <Services
+              );
+            })}
+
+            {/* <Services
               icon={
                 <FiLayers
                   size="36px"
@@ -202,7 +204,7 @@ export default function Home() {
               des="It involves creating a unique and recognizable identity that
                 sets the brand apart from competitors and resonates with the
                 target audience."
-            />
+            /> */}
           </div>
         </div>
       </section>
