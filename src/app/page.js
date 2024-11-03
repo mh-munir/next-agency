@@ -23,6 +23,9 @@ import projectUs3 from "@/img/p3.png";
 import projectUs4 from "@/img/p4.png";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 import Feedback from "@/components/clientfeedback/Feedback";
+import Services from "@/components/services/Services";
+import Prossec from "@/components/prossec/Prossec";
+import Portfolio from "@/components/portfolio/Portfolio";
 
 export default function Home() {
   return (
@@ -53,7 +56,7 @@ export default function Home() {
               </p>
               <Link
                 className="text-black hover:text-white font-dm-sans border border-black font-normal text-xl bg-white hover:bg-black hover:border hover:border-white group inline-block px-5 py-2 rounded-3xl mb-28 duration-300"
-                href="/"
+                href="/about-us"
               >
                 <IoArrowForwardCircleSharp
                   size="24px"
@@ -75,7 +78,6 @@ export default function Home() {
                     <Image
                       className="max-w-36"
                       src={Bp1}
-                      priority="true"
                       alt="My patner brand name"
                     />
                   </li>
@@ -83,7 +85,6 @@ export default function Home() {
                     <Image
                       className="max-w-36"
                       src={Bp2}
-                      priority="true"
                       alt="My patner brand name"
                     />
                   </li>
@@ -91,7 +92,6 @@ export default function Home() {
                     <Image
                       className="max-w-36"
                       src={Bp3}
-                      priority="true"
                       alt="My patner brand name"
                     />
                   </li>
@@ -99,7 +99,6 @@ export default function Home() {
                     <Image
                       className="max-w-36"
                       src={Bp4}
-                      priority={true}
                       alt="My patner brand name"
                     />
                   </li>
@@ -114,7 +113,6 @@ export default function Home() {
                   className="w-full h-auto shadow-my-shadow rounded-full"
                   alt="Hero Image"
                   src={HeroImg}
-                  priority={true}
                 />
               </div>
             </div>
@@ -135,103 +133,76 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
             {/* Card 01 */}
-            <div className="group bg-gray-100 rounded-2xl p-8 hover:bg-black duration-200">
-              <span className="flex items-center justify-center bg-black w-20 h-20 rounded-full mb-10 group-hover:bg-white duration-200">
+            <Services
+              icon={
                 <FaPenFancy
                   size="36px"
                   className="text-white group-hover:text-black duration-200"
                 />
-              </span>
-              <h4 className="text-xl font-roboto-serif font-medium mb-3 group-hover:text-white duration-200">
-                Content Marketing
-              </h4>
-              <article className="text-lg font-dm-sans font-light group-hover:text-white duration-200">
-                Our team creates engaging and shareable content that resonates
-                with your audience, drives organic traffic
-              </article>
-            </div>
-            {/* Card 02 */}
-            <div className="group bg-gray-100 rounded-2xl p-8 hover:bg-black duration-200">
-              <span className="flex items-center justify-center bg-black w-20 h-20 rounded-full mb-10 group-hover:bg-white duration-200">
+              }
+              ServiceTitle="Content Marketing"
+              des="Our team creates engaging and shareable content that resonates
+                with your audience, drives organic traffic"
+            />
+            <Services
+              icon={
                 <FiLayers
                   size="36px"
                   className="text-white group-hover:text-black duration-200"
                 />
-              </span>
-              <h4 className="text-xl font-roboto-serif font-medium mb-3 group-hover:text-white duration-200">
-                Graphic Design
-              </h4>
-              <article className="text-lg font-dm-sans font-light group-hover:text-white duration-200">
-                Unlock the power of visual storytelling with our expert graphic
-                design services tailored to elevate your brand and captivate.
-              </article>
-            </div>
-            {/* Card 03 */}
-            <div className="group bg-gray-100 rounded-2xl p-8 hover:bg-black duration-200">
-              <span className="flex items-center justify-center bg-black w-20 h-20 rounded-full mb-10 group-hover:bg-white duration-200">
+              }
+              ServiceTitle="Graphic Design"
+              des="Unlock the power of visual storytelling with our expert graphic
+                design services tailored to elevate your brand and captivate."
+            />
+            <Services
+              icon={
                 <CiBullhorn
                   size="48px"
                   className="text-white group-hover:text-black duration-200"
                 />
-              </span>
-              <h4 className="text-xl font-roboto-serif font-medium mb-3 group-hover:text-white duration-200">
-                Digital Marketing
-              </h4>
-              <article className="text-lg font-dm-sans font-light group-hover:text-white duration-200">
-                Elevate your brand online presence with our data-driven digital
-                marketing strategies. From SEO and content marketing
-              </article>
-            </div>
-            {/* Card 04 */}
-            <div className="group bg-gray-100 rounded-2xl p-8 hover:bg-black duration-200">
-              <span className="flex items-center justify-center bg-black w-20 h-20 rounded-full mb-10 group-hover:bg-white duration-200">
+              }
+              ServiceTitle="Digital Marketing"
+              des="Elevate your brand online presence with our data-driven digital
+                marketing strategies. From SEO and content marketing"
+            />
+
+            <Services
+              icon={
                 <IoIosColorPalette
                   size="48px"
                   className="text-white group-hover:text-black duration-200"
                 />
-              </span>
-              <h4 className="text-xl font-roboto-serif font-medium mb-3 group-hover:text-white duration-200">
-                Web Design
-              </h4>
-              <article className="text-lg font-dm-sans font-light group-hover:text-white duration-200">
-                We specialize in creating visually stunning, user-friendly
+              }
+              ServiceTitle="Web Design"
+              des="We specialize in creating visually stunning, user-friendly
                 websites that align with your brand identity and deliver an
-                exceptional.
-              </article>
-            </div>
-            {/* Card 05 */}
-            <div className="group bg-gray-100 rounded-2xl p-8 hover:bg-black duration-200">
-              <span className="flex items-center justify-center bg-black w-20 h-20 rounded-full mb-10 group-hover:bg-white duration-200">
+                exceptional."
+            />
+            <Services
+              icon={
                 <FaUserTie
                   size="36px"
                   className="text-white group-hover:text-black duration-200"
                 />
-              </span>
-              <h4 className="text-xl font-roboto-serif font-medium mb-3 group-hover:text-white duration-200">
-                IT Consulting
-              </h4>
-              <article className="text-lg font-dm-sans font-light group-hover:text-white duration-200">
-                IT consulting, or information technology consulting, refers to
-                the practice of providing advisory and implementation services
-              </article>
-            </div>
-            {/* Card 06 */}
-            <div className="group bg-gray-100 rounded-2xl p-8 hover:bg-black duration-200">
-              <span className="flex items-center justify-center bg-black w-20 h-20 rounded-full mb-10 group-hover:bg-white duration-200">
+              }
+              ServiceTitle="IT Consulting"
+              des="IT consulting, or information technology consulting, refers to
+                the practice of providing advisory and implementation services"
+            />
+
+            <Services
+              icon={
                 <FaRegGem
                   size="36px"
                   className="text-white group-hover:text-black duration-200"
                 />
-              </span>
-              <h4 className="text-xl font-roboto-serif font-medium mb-3 group-hover:text-white duration-200">
-                Brand Identify
-              </h4>
-              <article className="text-lg font-dm-sans font-light group-hover:text-white duration-200">
-                It involves creating a unique and recognizable identity that
+              }
+              ServiceTitle=" Brand Identify"
+              des="It involves creating a unique and recognizable identity that
                 sets the brand apart from competitors and resonates with the
-                target audience.
-              </article>
-            </div>
+                target audience."
+            />
           </div>
         </div>
       </section>
@@ -239,12 +210,7 @@ export default function Home() {
       <section className="py-24 bg-black">
         <div className="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-8 items-start">
           <div>
-            <Image
-              priority={true}
-              className="w-full h-auto"
-              src={AboutUs}
-              alt="About Us"
-            />
+            <Image className="w-full h-auto" src={AboutUs} alt="About Us" />
           </div>
           <div>
             <span className="font-semibold text-slate-400 text-2xl font-roboto-serif inline-block mb-5">
@@ -297,7 +263,7 @@ export default function Home() {
             </div>
             <Link
               className="text-black hover:text-white font-dm-sans border border-black font-normal text-xl bg-white hover:bg-black hover:border hover:border-white group inline-block px-5 py-2 rounded-3xl duration-300"
-              href="/"
+              href="/contact"
             >
               <IoArrowForwardCircleSharp
                 size="24px"
@@ -326,71 +292,37 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-10">
             {/* Card 01 */}
-            <div className="p-8 border-4 border-gray-100 rounded-xl relative">
-              <div className="flex items-center justify-center gap-4 mb-6 absolute -top-10  left-1/2 bg-white -translate-x-1/2 p-2">
-                <span className="flex items-center justify-center bg-black w-16 h-16 rounded-full duration-200">
-                  <TfiLightBulb
-                    size="28px"
-                    className="text-white duration-200"
-                  />
-                </span>
-                <h4 className="text-xl font-roboto-serif font-medium duration-200">
-                  Ideate
-                </h4>
-              </div>
-              <article className="text-lg font-dm-sans font-light pt-5">
-                The ideation process is a crucial phase in the design process
-                where creative thinking and brainstorming
-              </article>
-            </div>
-            {/* Card 02 */}
-            <div className="p-8 border-4 border-gray-100 rounded-xl relative">
-              <div className="flex items-center justify-center gap-4 mb-6 absolute -top-10  left-1/2 bg-white -translate-x-1/2 p-2">
-                <span className="flex items-center justify-center bg-black w-16 h-16 rounded-full duration-200">
-                  <HiOutlineEnvelope size="28px" className="text-white" />
-                </span>
-                <h4 className="text-xl font-roboto-serif font-medium">
-                  Reserach
-                </h4>
-              </div>
-              <article className="text-lg font-dm-sans font-light pt-5">
-                Research is a critical component of the design process, helping
-                designers understand the problem
-              </article>
-            </div>
-            {/* Card 03 */}
-            <div className="p-8 border-4 border-gray-100 rounded-xl relative">
-              <div className="flex items-center justify-center gap-4 mb-6 absolute -top-10  left-1/2 bg-white -translate-x-1/2 p-2">
-                <span className="flex items-center justify-center bg-black w-16 h-16 rounded-full">
-                  <FiMove size="28px" className="text-white" />
-                </span>
-                <h4 className="text-xl font-roboto-serif font-medium">
-                  Create
-                </h4>
-              </div>
-              <article className="text-lg font-dm-sans font-light pt-5">
-                Designing a process involves several key steps to ensure
-                clarity, efficiency, successful implementation
-              </article>
-            </div>
-            {/* Card 04 */}
-            <div className="p-8 border-4 border-gray-100 rounded-xl relative">
-              <div className="flex items-center justify-center gap-4 mb-6 absolute -top-10  left-1/2 bg-white -translate-x-1/2 p-2">
-                <span className="flex items-center justify-center bg-black w-16 h-16 rounded-full duration-200">
-                  <FiCheckSquare
-                    size="28px"
-                    className="text-white duration-200"
-                  />
-                </span>
-                <h4 className="text-xl font-roboto-serif font-medium duration-200">
-                  Testing
-                </h4>
-              </div>
-              <article className="text-lg font-dm-sans font-light pt-5">
-                Testing is a crucial phase in the design process to ensure that
-                the product or system meets the specified requirements
-              </article>
-            </div>
+            <Prossec
+              icon={
+                <TfiLightBulb size="28px" className="text-white duration-200" />
+              }
+              title="Ideate"
+              des="The ideation process is a crucial phase in the design process
+                where creative thinking and brainstorming"
+            />
+            <Prossec
+              icon={<HiOutlineEnvelope size="28px" className="text-white" />}
+              title="Reserach"
+              des="Research is a critical component of the design process, helping
+                designers understand the problem"
+            />
+            <Prossec
+              icon={<FiMove size="28px" className="text-white" />}
+              title="Create"
+              des="Designing a process involves several key steps to ensure
+                clarity, efficiency, successful implementation"
+            />
+            <Prossec
+              icon={
+                <FiCheckSquare
+                  size="28px"
+                  className="text-white duration-200"
+                />
+              }
+              title="Testing"
+              des="Testing is a crucial phase in the design process to ensure that
+                the product or system meets the specified requirements"
+            />
           </div>
         </div>
       </section>
@@ -403,44 +335,30 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 gap-10 items-start">
+          <div className="grid md:grid-cols-2 gap-10 items-start">
             <div className="grid gap-10">
               {/* Project 01 */}
-              <div className="group rounded-2xl relative">
-                <Image
-                  className="mb-5 w-full h-auto"
-                  src={projectUs}
-                  alt="Our Project"
-                />
-                <h4 className="text-xl font-roboto-serif font-medium">
-                  Web UI design
-                </h4>
-                <p>Creative UI design</p>
-                <Link
-                  className="hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:block z-10 duration-100"
-                  href=""
-                >
+              <Portfolio
+                imgsrc={projectUs}
+                alt="Our Project"
+                title="Web UI design"
+                des="Creative UI design"
+                path="/contact"
+                icon={
                   <BsArrowUpRightCircle size={28} className=" text-white" />
-                </Link>
-              </div>
+                }
+              />
               {/* Project 02 */}
-              <div className="group rounded-2xl relative">
-                <Image
-                  className="mb-5 w-full h-auto"
-                  src={projectUs2}
-                  alt="Our Project"
-                />
-                <h4 className="text-xl font-roboto-serif font-medium">
-                  Web UI design
-                </h4>
-                <p>Creative UI design</p>
-                <Link
-                  className="hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:block z-10 duration-100"
-                  href=""
-                >
+              <Portfolio
+                imgsrc={projectUs2}
+                alt="Our Project"
+                title="Web UI design"
+                des="Creative UI design"
+                path="/contact"
+                icon={
                   <BsArrowUpRightCircle size={28} className=" text-white" />
-                </Link>
-              </div>
+                }
+              />
             </div>
             <div className="grid gap-10">
               <div className="grid justify-end mt-10">
@@ -456,41 +374,26 @@ export default function Home() {
                 </Link>
               </div>
               {/* Project 03 */}
-              <div className="group rounded-2xl relative">
-                <Image
-                  className="mb-5 w-full h-auto"
-                  src={projectUs3}
-                  alt="Our Project"
-                />
-                <h4 className="text-xl font-roboto-serif font-medium">
-                  Web UI design
-                </h4>
-                <p>Creative UI design</p>
-                <Link
-                  className="hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:block z-10 duration-100"
-                  href=""
-                >
+              <Portfolio
+                imgsrc={projectUs3}
+                alt="Our Project"
+                title="Web UI design"
+                des="Creative UI design"
+                path="/contact"
+                icon={
                   <BsArrowUpRightCircle size={28} className=" text-white" />
-                </Link>
-              </div>
-              {/* Project 04 */}
-              <div className="group rounded-2xl relative">
-                <Image
-                  className="mb-5 w-full h-auto"
-                  src={projectUs4}
-                  alt="Our Project"
-                />
-                <h4 className="text-xl font-roboto-serif font-medium">
-                  Web UI design
-                </h4>
-                <p>Creative UI design</p>
-                <Link
-                  className="hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:block z-10 duration-100"
-                  href=""
-                >
+                }
+              />
+              <Portfolio
+                imgsrc={projectUs4}
+                alt="Our Project"
+                title="Web UI design"
+                des="Creative UI design"
+                path="/contact"
+                icon={
                   <BsArrowUpRightCircle size={28} className=" text-white" />
-                </Link>
-              </div>
+                }
+              />
             </div>
           </div>
         </div>

@@ -91,7 +91,10 @@ const Footer = () => {
             <h3 className="text-white text-xl font-roboto-serif font-medium mb-5">
               Subscribe
             </h3>
-            <form className="relative bg-white pr-1 rounded-2xl flex items-center justify-between mb-5">
+            <form
+              action="/"
+              className="relative bg-white pr-1 rounded-2xl flex items-center justify-between mb-5"
+            >
               <input
                 name="email"
                 className="w-full h-full py-2 px-5 rounded-xl"
