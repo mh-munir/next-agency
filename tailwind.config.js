@@ -18,8 +18,7 @@ module.exports = {
       backgroundImage: {
         "hero-bg": "url('../img/hero-bg.png')",
         "hero-img": "url('../img/hero-img.png')",
-        "pross-bg": "url('../img/Vector.png')",
-        "pross-bg2": "url('../img/Vector2.png')",
+        "getin-bg": "url('../img/getin.png')",
       },
       boxShadow: {
         "my-shadow": "0px 0px 200px 100px rgba(255,255,255,0.1)",
