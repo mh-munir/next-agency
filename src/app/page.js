@@ -47,7 +47,7 @@ export default function Home() {
                 Ready to take your
                 <span className="md:inline-block lg:block text-slate-400 leading-normal">
                   Business Growth
-                </span>{" "}
+                </span>
                 to the next level?
               </h1>
               <p className="text-lg text-white font-light font-dm-sans max-w-[500px] mb-7">
@@ -345,7 +345,7 @@ export default function Home() {
                 alt="Our Project"
                 title="Web UI design"
                 des="Creative UI design"
-                path="/contact"
+                path="/portfolio"
                 icon={
                   <BsArrowUpRightCircle size={28} className=" text-white" />
                 }
@@ -356,7 +356,7 @@ export default function Home() {
                 alt="Our Project"
                 title="Web UI design"
                 des="Creative UI design"
-                path="/contact"
+                path="/portfolio"
                 icon={
                   <BsArrowUpRightCircle size={28} className=" text-white" />
                 }
@@ -381,7 +381,7 @@ export default function Home() {
                 alt="Our Project"
                 title="Web UI design"
                 des="Creative UI design"
-                path="/contact"
+                path="/portfolio"
                 icon={
                   <BsArrowUpRightCircle size={28} className=" text-white" />
                 }
@@ -391,7 +391,7 @@ export default function Home() {
                 alt="Our Project"
                 title="Web UI design"
                 des="Creative UI design"
-                path="/contact"
+                path="/portfolio"
                 icon={
                   <BsArrowUpRightCircle size={28} className=" text-white" />
                 }

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
 import AboutUsImg from "@/img/about-us-page.png";
 import ReviewImg from "@/img/review.png";
 import Mission1 from "@/img/mission1.png";
@@ -11,10 +11,12 @@ import Team4 from "@/img/t4.png";
 import Team5 from "@/img/t5.png";
 import Team6 from "@/img/t6.png";
 import TeamM1 from "@/img/tm1.png";
-import TeamM2 from "@/img/tm1.png";
-import TeamM3 from "@/img/tm1.png";
+import TeamM2 from "@/img/tm2.png";
+import TeamM3 from "@/img/tm3.png";
 import { FaRegStar, FaRegStarHalf } from "react-icons/fa";
 import { IoIosCheckmarkCircle } from "react-icons/io";
+import { FiFacebook, FiInstagram } from "react-icons/fi";
+import { CiLinkedin } from "react-icons/ci";
 
 export const metadata = {
   title: "About Us",
@@ -50,7 +52,7 @@ const AboutUs = () => {
                 <p className="text-white text-lg font-roboto-serif mb-2">
                   Rated 4.9/5 stars
                 </p>
-                <ul className="flex">
+                <ul className="flex gap-1">
                   <li>
                     <FaRegStar size={20} className="text-white" />
                   </li>
@@ -129,7 +131,7 @@ const AboutUs = () => {
               all Devonshire difficulty gay assistance joy.
             </p>
             <div>
-              <ul className="grid grid-cols-2 items-start gap-x-5">
+              <ul className="grid md:grid-cols-2 items-start gap-x-5">
                 <li className="flex items-start text-white text-lg gap-2 mb-4">
                   <span className="inline-block mt-1">
                     <IoIosCheckmarkCircle
@@ -285,15 +287,162 @@ const AboutUs = () => {
 
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-5">
-          <div>
-            <Image src={TeamM1} alt="Our Team Member" />
+          <div className="text-center mb-10">
+            <h2 className="text-4xl leading-normal xl:text-6xl text-black font-semibold font-roboto-serif xl:leading-[1.3]">
+              Our Teams
+            </h2>
           </div>
-          <div>
-            <Image src={TeamM2} alt="Our Team Member" />
+          <div className="grid md:grid-cols-3 gap-10 ">
+            <div className="relative">
+              <Image
+                className="w-full h-auto"
+                src={TeamM1}
+                alt="Our Team Member"
+              />
+              <div className="mt-5">
+                <h5 className="text-xl text-black font-roboto-serif font-medium mb-1">
+                  Esther Howards
+                </h5>
+                <p className="text-base">Founder & CEO</p>
+                <ul className="absolute top-5 right-5 flex gap-5">
+                  <li>
+                    <Link
+                      className="w-8 h-8 bg-white rounded-full flex items-center justify-center"
+                      href="/"
+                    >
+                      <FiFacebook size={16} className="text-black leading-4" />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="w-8 h-8 bg-white rounded-full flex items-center justify-center"
+                      href="/"
+                    >
+                      <FiInstagram
+                        size={16}
+                        className="text-black text-center leading-4"
+                      />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="w-8 h-8 bg-white rounded-full flex items-center justify-center"
+                      href="/"
+                    >
+                      <CiLinkedin
+                        size={16}
+                        className="text-black text-center leading-4"
+                      />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="relative">
+              <Image
+                className="w-full h-auto"
+                src={TeamM2}
+                alt="Our Team Member"
+              />
+              <div className="mt-5">
+                <h5 className="text-xl text-black font-roboto-serif font-medium mb-1">
+                  Cameron Williamson
+                </h5>
+                <p className="text-base">Founder & CEO</p>
+                <ul className="absolute top-5 right-5 flex gap-5">
+                  <li>
+                    <Link
+                      className="w-8 h-8 bg-white rounded-full flex items-center justify-center"
+                      href="/"
+                    >
+                      <FiFacebook size={16} className="text-black leading-4" />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="w-8 h-8 bg-white rounded-full flex items-center justify-center"
+                      href="/"
+                    >
+                      <FiInstagram
+                        size={16}
+                        className="text-black text-center leading-4"
+                      />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="w-8 h-8 bg-white rounded-full flex items-center justify-center"
+                      href="/"
+                    >
+                      <CiLinkedin
+                        size={16}
+                        className="text-black text-center leading-4"
+                      />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="relative">
+              <Image
+                className="w-full h-auto"
+                src={TeamM3}
+                alt="Our Team Member"
+              />
+              <div className="mt-5">
+                <h5 className="text-xl text-black font-roboto-serif font-medium mb-1">
+                  Liam Cooper
+                </h5>
+                <p className="text-base">Founder & CEO</p>
+                <ul className="absolute top-5 right-5 flex gap-5">
+                  <li>
+                    <Link
+                      className="w-8 h-8 bg-white rounded-full flex items-center justify-center"
+                      href="/"
+                    >
+                      <FiFacebook size={16} className="text-black leading-4" />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="w-8 h-8 bg-white rounded-full flex items-center justify-center"
+                      href="/"
+                    >
+                      <FiInstagram
+                        size={16}
+                        className="text-black text-center leading-4"
+                      />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="w-8 h-8 bg-white rounded-full flex items-center justify-center"
+                      href="/"
+                    >
+                      <CiLinkedin
+                        size={16}
+                        className="text-black text-center leading-4"
+                      />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div>
-            <Image src={TeamM3} alt="Our Team Member" />
-          </div>
+        </div>
+      </section>
+
+      <section className="mb-24">
+        <div className="max-w-5xl mx-auto px-5 bg-getin-bg bg-cover bg-no-repeat bg-center py-10 rounded-3xl text-center">
+          <h2 className="text-4xl leading-normal xl:text-6xl text-white font-semibold font-roboto-serif xl:leading-[1.3] mb-4">
+            Enough talk, let’s get to work
+          </h2>
+          <Link
+            className="inline-block text-black bg-white font-dm-sans px-5 py-2 rounded-full"
+            href=""
+          >
+            Get in touch
+          </Link>
         </div>
       </section>
     </main>
