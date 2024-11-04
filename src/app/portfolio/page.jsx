@@ -23,7 +23,7 @@ const PortfolioPage = () => {
             alt="Our Project"
             title="Web UI design"
             des="Creative UI design"
-            path="/contact"
+            path="/portfolio-details"
             icon={<BsArrowUpRightCircle size={28} className=" text-white" />}
           />
           <Portfolio
@@ -31,7 +31,7 @@ const PortfolioPage = () => {
             alt="Our Project"
             title="Web UI design"
             des="Creative UI design"
-            path="/contact"
+            path="/portfolio-details"
             icon={<BsArrowUpRightCircle size={28} className=" text-white" />}
           />
           <Portfolio
@@ -39,7 +39,7 @@ const PortfolioPage = () => {
             alt="Our Project"
             title="Web UI design"
             des="Creative UI design"
-            path="/contact"
+            path="/portfolio-details"
             icon={<BsArrowUpRightCircle size={28} className=" text-white" />}
           />
           <Portfolio
@@ -47,7 +47,7 @@ const PortfolioPage = () => {
             alt="Our Project"
             title="Web UI design"
             des="Creative UI design"
-            path="/contact"
+            path="/portfolio-details"
             icon={<BsArrowUpRightCircle size={28} className=" text-white" />}
           />
         </div>
