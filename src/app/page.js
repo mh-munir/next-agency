@@ -27,7 +27,7 @@ import { data } from "./Demo";
 export default function Home() {
   return (
     <main>
-      <section className="w-full relative z-10 bg-black py-20">
+      <section className="w-full relative z-10 bg-black pb-24 pt-48">
         <div className="absolute w-full h-full bg-hero-bg top-0 left-0 -z-10"></div>
         <div className="absolute top-5 -left-2">
           <Image
@@ -128,79 +128,19 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
-            {/* Card 01 */}
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 items-stretch gap-5">
             {data.map((item, index) => {
               return (
                 <Services
                   key={index}
                   index={index}
+                  ServiceImage={item.sImage}
                   icon={item.icon}
                   ServiceTitle={item.ServiceTitle}
                   des={item.des}
                 />
               );
             })}
-
-            {/* <Services
-              icon={
-                <FiLayers
-                  size="36px"
-                  className="text-white group-hover:text-black duration-200"
-                />
-              }
-              ServiceTitle="Graphic Design"
-              des="Unlock the power of visual storytelling with our expert graphic
-                design services tailored to elevate your brand and captivate."
-            />
-            <Services
-              icon={
-                <CiBullhorn
-                  size="48px"
-                  className="text-white group-hover:text-black duration-200"
-                />
-              }
-              ServiceTitle="Digital Marketing"
-              des="Elevate your brand online presence with our data-driven digital
-                marketing strategies. From SEO and content marketing"
-            />
-
-            <Services
-              icon={
-                <IoIosColorPalette
-                  size="48px"
-                  className="text-white group-hover:text-black duration-200"
-                />
-              }
-              ServiceTitle="Web Design"
-              des="We specialize in creating visually stunning, user-friendly
-                websites that align with your brand identity and deliver an
-                exceptional."
-            />
-            <Services
-              icon={
-                <FaUserTie
-                  size="36px"
-                  className="text-white group-hover:text-black duration-200"
-                />
-              }
-              ServiceTitle="IT Consulting"
-              des="IT consulting, or information technology consulting, refers to
-                the practice of providing advisory and implementation services"
-            />
-
-            <Services
-              icon={
-                <FaRegGem
-                  size="36px"
-                  className="text-white group-hover:text-black duration-200"
-                />
-              }
-              ServiceTitle=" Brand Identify"
-              des="It involves creating a unique and recognizable identity that
-                sets the brand apart from competitors and resonates with the
-                target audience."
-            /> */}
           </div>
         </div>
       </section>

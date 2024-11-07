@@ -9,7 +9,7 @@ import { BsArrowUpRightCircle } from "react-icons/bs";
 const PortfolioPage = () => {
   return (
     <main>
-      <section className="bg-black py-28 rounded-3xl">
+      <section className="bg-black pt-48 pb-28 rounded-3xl">
         <div className="max-w-7xl mx-auto px-5 text-center">
           <h1 className="text-4xl xl:text-6xl font-bold font-roboto-serif text-white leading-normal mb-4">
             Our Portfolio

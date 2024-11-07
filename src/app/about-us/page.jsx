@@ -26,7 +26,7 @@ export const metadata = {
 const AboutUs = () => {
   return (
     <main>
-      <section className="bg-black pt-24 rounded-3xl">
+      <section className="bg-black pt-48 rounded-3xl">
         <div className="grid md:grid-cols-2 max-w-[1600px] ml-auto pl-5 items-center gap-10">
           <div className="pr-5 md:pr-0">
             <span className="text-lg text-white block font-dm-sans mb-5">

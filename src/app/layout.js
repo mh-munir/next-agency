@@ -2,6 +2,7 @@ import { Roboto_Serif, DM_Sans } from "next/font/google";
 import "./globals.css";
 
 import Footer from "@/components/footer/Footer";
+import Navigation from "@/components/navigation/Navigation";
 
 const roboto_serif = Roboto_Serif({
   weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${roboto_serif.variable} ${dm_sans.variable}`}>
+        <Navigation />
         {children}
         <Footer />
       </body>
