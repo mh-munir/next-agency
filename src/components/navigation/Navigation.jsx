@@ -27,7 +27,7 @@ const Navigation = () => {
     >
       <div className="max-w-7xl mx-auto px-5 flex justify-between items-center">
         <Link
-          className="font-roboto-serif text-2xl italic font-medium text-slate-400"
+          className="font-roboto-serif text-2xl font-medium text-slate-400"
           href="/"
         >
           MH.Munir
@@ -74,8 +74,8 @@ const Navigation = () => {
             <li>
               <Link
                 onClick={() => setIsNav(!isNav)}
-                className="font-roboto-serif bg-slate-400 text-lg font-normal py-3 px-5 rounded-full text-black inline-block mt-5 md:mt-0"
-                href="/"
+                className="font-roboto-serif bg-slate-400 text-lg font-normal py-3 px-5 rounded-full text-white inline-block mt-5 md:mt-0"
+                href="/contact"
               >
                 Get in touch
               </Link>

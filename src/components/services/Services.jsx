@@ -21,7 +21,7 @@ const Services = (props) => {
           <h4 className="text-xl font-roboto-serif capitalize font-medium mb-3 group-hover:text-white duration-200">
             {props.ServiceTitle}
           </h4>
-          <p className="text-lg font-dm-sans font-light group-hover:text-white duration-200">
+          <p className="text-lg font-dm-sans font-light group-hover:text-white duration-200 h-14 overflow-hidden">
             {props.des}
           </p>
         </article>

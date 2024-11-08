@@ -19,7 +19,8 @@ export const data = [
       />
     ),
     ServiceTitle: "Content Marketing",
-    des: "Our team creates engaging and shareable content that resonates with your audience, drives organic traffic",
+    des: `Our team creates engaging and shareable content that resonates with your audience, drives organic traffic 
+    Our team creates engaging and shareable content that resonates with your audience, drives organic traffic`,
   },
   {
     sImage: Webdesign,
@@ -30,7 +31,8 @@ export const data = [
       />
     ),
     ServiceTitle: "Web Design",
-    des: "Unlock the power of visual storytelling with our expert graphic design services tailored to elevate your brand and captivate.",
+    des: `Unlock the power of visual storytelling with our expert graphic design services tailored to elevate your brand and captivate. 
+    Unlock the power of visual storytelling with our expert graphic design services tailored to elevate your brand and captivate.`,
   },
   {
     sImage: FrontEnd,
@@ -41,7 +43,8 @@ export const data = [
       />
     ),
     ServiceTitle: "Front-End Development",
-    des: "Elevate your brand online presence with our data-driven digital marketing strategies. From SEO and content marketing",
+    des: `Elevate your brand online presence with our data-driven digital marketing strategies. From SEO and content marketing 
+    Elevate your brand online presence with our data-driven digital marketing strategies. From SEO and content marketing`,
   },
   {
     sImage: WebDev,
@@ -52,7 +55,8 @@ export const data = [
       />
     ),
     ServiceTitle: "Web Development",
-    des: "We specialize in creating visually stunning, user-friendly websites that align with your brand identity and deliver anexceptional.",
+    des: `We specialize in creating visually stunning, user-friendly websites that align with your brand identity and deliver anexceptional. 
+    We specialize in creating visually stunning, user-friendly websites that align with your brand identity and deliver anexceptional.`,
   },
   {
     sImage: Dmarketing,
@@ -63,7 +67,8 @@ export const data = [
       />
     ),
     ServiceTitle: "Digital marketing",
-    des: "IT consulting, or information technology consulting, refers to the practice of providing advisory and implementation services",
+    des: `IT consulting, or information technology consulting, refers to the practice of providing advisory and implementation services IT consulting, 
+    or information technology consulting, refers to the practice of providing advisory and implementation services`,
   },
   {
     sImage: Amarketing,
@@ -74,6 +79,7 @@ export const data = [
       />
     ),
     ServiceTitle: "Affiliate marketing",
-    des: "It involves creating a unique and recognizable identity that sets the brand apart from competitors and resonates with the target audience.",
+    des: `It involves creating a unique and recognizable identity that sets the brand apart from competitors and resonates with the target audience.
+    It involves creating a unique and recognizable identity that sets the brand apart from competitors and resonates with the target audience.`,
   },
 ];
