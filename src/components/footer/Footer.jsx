@@ -1,10 +1,20 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import { useState } from "react";
 import Logo from "@/img/coxsit.png";
 import Link from "next/link";
 import { FaFacebookF, FaXTwitter, FaInstagram } from "react-icons/fa6";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSubmitted(true);
+
+    setEmail("");
+  };
   return (
     <footer className="bg-black pt-24 pb-12">
       <div className="max-w-7xl mx-auto px-5">
@@ -87,27 +97,36 @@ const Footer = () => {
               </li>
             </ul>
           </nav>
-          <div className="basis-full md:basis-2/6">
+          <div className="basis-full md:basis-2/6 relative top-0 left-0">
             <h3 className="text-white text-xl font-roboto-serif font-medium mb-5">
               Subscribe
             </h3>
-            <form
-              action="/"
-              className="relative bg-white pr-1 rounded-2xl flex items-center justify-between mb-5"
-            >
-              <input
-                name="email"
-                className="w-full h-full py-2 px-5 rounded-xl"
-                type="email"
-                autoComplete="none"
-              />
-              <button
-                className=" bg-black text-white right-0 py-1 px-5 rounded-xl"
-                type="submit"
+            {!submitted ? (
+              <form
+                onSubmit={handleSubmit}
+                className="relative bg-white pr-1 rounded-2xl flex items-center justify-between mb-5"
               >
-                Subscribe
-              </button>
-            </form>
+                <input
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  name="email"
+                  className="w-full h-full py-2 px-5 rounded-xl"
+                  type="email"
+                  autoComplete="none"
+                />
+                <button
+                  className=" bg-black text-white right-0 py-1 px-5 rounded-xl"
+                  type="submit"
+                >
+                  Subscribe
+                </button>
+              </form>
+            ) : (
+              <p className="text-center bg-white p-2 text-black rounded-3xl mb-5">
+                You&apos;ve successfully subscribed to our newsletter.
+              </p>
+            )}
             <ul className="flex items-center gap-4">
               <li>
                 <Link

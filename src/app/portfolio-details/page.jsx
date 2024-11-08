@@ -136,41 +136,6 @@ const PorfolioSingle = () => {
           </div>
         </div>
       </section>
-      <section className="pb-24 pt-12">
-        <div className="max-w-7xl mx-auto px-5">
-          <div className="max-w-[750px] mx-auto text-center mb-14">
-            <h2 className="text-4xl leading-normal xl:text-6xl text-black font-semibold font-roboto-serif xl:leading-[1.3]">
-              Recent Projects
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-10">
-            <RecentPorfolio
-              imgsrc={projectUs}
-              alt="Our Project"
-              title="Web UI design"
-              des="Creative UI design"
-              path="/portfolio"
-              icon={<BsArrowUpRightCircle size={28} className=" text-white" />}
-            />
-            <RecentPorfolio
-              imgsrc={projectUs2}
-              alt="Our Project"
-              title="Web UI design"
-              des="Creative UI design"
-              path="/portfolio"
-              icon={<BsArrowUpRightCircle size={28} className=" text-white" />}
-            />
-            <RecentPorfolio
-              imgsrc={projectUs3}
-              alt="Our Project"
-              title="Web UI design"
-              des="Creative UI design"
-              path="/portfolio"
-              icon={<BsArrowUpRightCircle size={28} className=" text-white" />}
-            />
-          </div>
-        </div>
-      </section>
     </main>
   );
 };

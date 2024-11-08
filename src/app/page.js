@@ -34,6 +34,7 @@ export default function Home() {
             src={petarn}
             className="w-[180] h-[190] object-cover"
             alt="Petern"
+            priority={true}
           />
         </div>
         <div className="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-10 items-center">
