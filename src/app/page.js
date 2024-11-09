@@ -29,10 +29,10 @@ export default function Home() {
     <main>
       <section className="w-full relative z-10 bg-black pb-24 pt-48">
         <div className="absolute w-full h-full bg-hero-bg top-0 left-0 -z-10"></div>
-        <div className="absolute top-5 -left-2">
+        <div className="absolute top-24 -left-2">
           <Image
             src={petarn}
-            className="w-[180] h-[190] object-cover"
+            className="w-[120px] h-auto"
             alt="Petern"
             priority={true}
           />
@@ -54,7 +54,7 @@ export default function Home() {
               </p>
               <Link
                 className="text-black hover:text-white font-dm-sans border border-black font-normal text-xl bg-white hover:bg-black hover:border hover:border-white group inline-block px-5 py-2 rounded-3xl mb-28 duration-300"
-                href="/about-us"
+                href="/portfolio"
               >
                 <IoArrowForwardCircleSharp
                   size="24px"
@@ -202,7 +202,7 @@ export default function Home() {
             </div>
             <Link
               className="text-black hover:text-white font-dm-sans border border-black font-normal text-xl bg-white hover:bg-black hover:border hover:border-white group inline-block px-5 py-2 rounded-3xl duration-300"
-              href="/contact"
+              href="/portfolio"
             >
               <IoArrowForwardCircleSharp
                 size="24px"
@@ -275,7 +275,7 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-10 items-start">
-            <div className="grid gap-10">
+            <div className="grid gap-10 order-2 md:order-1">
               {/* Project 01 */}
               <Portfolio
                 imgsrc={projectUs}
@@ -299,11 +299,11 @@ export default function Home() {
                 }
               />
             </div>
-            <div className="grid gap-10">
-              <div className="grid justify-end mt-10">
+            <div className="grid gap-10 order-1 md:order-2">
+              <div className="grid justify-end md:mt-10">
                 <Link
                   className="text-white font-dm-sans font-normal text-xl bg-black inline-block px-5 py-2 rounded-3xl"
-                  href="/"
+                  href="/portfolio"
                 >
                   <IoArrowForwardCircleSharp
                     size="24px"

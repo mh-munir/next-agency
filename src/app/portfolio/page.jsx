@@ -62,7 +62,7 @@ const PortfolioPage = () => {
           </h2>
           <Link
             className="inline-block text-black bg-white font-dm-sans px-5 py-2 rounded-full"
-            href=""
+            href="/contact"
           >
             Get in touch
           </Link>
